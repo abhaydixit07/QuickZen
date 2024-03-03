@@ -48,9 +48,9 @@ QuickZen is a minimalist to-do list application designed to provide a quick and 
 
 4. **Configure the database:**
 
-   -Set up a PostgreSQL database on ElephantSQL.
-   -Obtain your database credentials from ElephantSQL.
-   -Update the database configuration in index.js with your ElephantSQL credentials.
+   -Set up a PostgreSQL database on ElephantSQL.  
+   -Obtain your database credentials from ElephantSQL.  
+   -Update the database configuration in index.js with your ElephantSQL credentials.  
 
 5. **Run the application:**
    ```bash
@@ -60,13 +60,13 @@ QuickZen is a minimalist to-do list application designed to provide a quick and 
 
 ## Usage
    -Access the application in your web browser.  
-   -Sign up for a new account or log in securely.
-   -Add, edit, and delete tasks using the provided interface.
+   -Sign up for a new account or log in securely.  
+   -Add, edit, and delete tasks using the provided interface.  
 ## Contributing
-   -Contributions are welcome! Please follow these guidelines:
-   -Fork the repository.
-   -Create a new branch: git checkout -b feature-name.
-   -Make your changes and commit them: git commit -m 'Add new feature'.
-   -Push to the branch: git push origin feature-name.
-   -Submit a pull request.
+   -Contributions are welcome! Please follow these guidelines:  
+   -Fork the repository.  
+   -Create a new branch: git checkout -b feature-name.  
+   -Make your changes and commit them: git commit -m 'Add new feature'.  
+   -Push to the branch: git push origin feature-name.  
+   -Submit a pull request.  
 
