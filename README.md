@@ -59,7 +59,7 @@ QuickZen is a minimalist to-do list application designed to provide a quick and 
 **The application will be accessible at http://localhost:3000 by default.**
 
 ## Usage
-   -Access the application in your web browser.
+   -Access the application in your web browser.  
    -Sign up for a new account or log in securely.
    -Add, edit, and delete tasks using the provided interface.
 ## Contributing
