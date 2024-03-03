@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUICKZEN</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+	<link rel="stylesheet" type="text/css" href="styles/login.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+
+</head>
+<header class="header">
+	<h1 class="logo"><a href="#">QUICKZEN</a></h1>
+	  <ul class="main-nav">
+		<li><a href="https:github.com/abhaydixit07">Github</a></li>
+        <li><a href="http://nexusquill.pythonanywhere.com/about">About</a></li>
+        <li><a href="http://nexusquill.pythonanywhere.com">Blogs</a></li>
+        <li><a href="/contact">Contact</a></li>
+		
+	  </ul>
+  </header> 
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="/login" method="POST">
+					<label for="chk" aria-hidden="true">Sign in</label>
+					<input type="email" name="username" placeholder="Email" required="">
+					<input type="password" name="password" placeholder="Password" required="">
+					<button>Sign in</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="/register" method="POST">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="name" name="name" placeholder="Name" required="">
+					<input type="email" name="username" placeholder="Email" required="">
+					<input type="password" name="password" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+	</div>
+</body>
+<footer >
+	<a href="https:github.com/abhaydixit07" style="color: white;">@github.com/abhaydixit07 Copyright © <%= new Date().getFullYear() %></a>
+   </footer>
+ </body>
+</html>
