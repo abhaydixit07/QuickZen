@@ -39,12 +39,14 @@ import bodyParser from "body-parser";
 import pg from "pg";
 import bcrypt from "bcrypt";
 import ora from 'ora';
-
+import env from 'dotenv'
 const app = express();
 const port = 3000;
 
+env.config();
+
 const saltRounds = 10;
-const conString = "postgres://ewqqlckx:IDDDSD5Gqs_cK-80uTkJKpWdCnOf58eI@ruby.db.elephantsql.com/ewqqlckx"; // Can be found in the Details page
+const conString = process.env.url_post; // Can be found in the Details page
 const db = new pg.Client(conString);
 
 // Create an instance of the spinner
