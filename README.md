@@ -19,7 +19,7 @@ QuickZen is a minimalist to-do list application designed to provide a quick and 
 
 ## Screenshots
 
-![Screenshot 1](path/to/screenshot1.png)
+![Screenshot 2024-03-03 172748](https://github.com/abhaydixit07/QuickZen/assets/120455759/178b6573-6611-40be-8351-59b9ac72187a)
 ![Screenshot 2](path/to/screenshot2.png)
 
 ## Getting Started
