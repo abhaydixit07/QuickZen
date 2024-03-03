@@ -59,15 +59,14 @@ QuickZen is a minimalist to-do list application designed to provide a quick and 
 **The application will be accessible at http://localhost:3000 by default.**
 
 ## Usage
-   Access the application in your web browser.
-   Sign up for a new account or log in securely.
-   Add, edit, and delete tasks using the provided interface.
-   Contributing
-   Contributions are welcome! Please follow these guidelines:
-   Fork the repository.
-   Create a new branch: git checkout -b feature-name.
-   Make your changes and commit them: git commit -m 'Add new feature'.
-   Push to the branch: git push origin feature-name.
-   Submit a pull request.
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+   1.Access the application in your web browser.
+   2.Sign up for a new account or log in securely.
+   3.Add, edit, and delete tasks using the provided interface.
+## Contributing
+   1.Contributions are welcome! Please follow these guidelines:
+   2.Fork the repository.
+   3.Create a new branch: git checkout -b feature-name.
+   4.Make your changes and commit them: git commit -m 'Add new feature'.
+   5.Push to the branch: git push origin feature-name.
+   6.Submit a pull request.
+
