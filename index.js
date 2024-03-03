@@ -38,6 +38,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
 import bcrypt from "bcrypt";
+import nodemailer from "nodemailer"
 import ora from 'ora';
 import env from 'dotenv'
 const app = express();
@@ -277,6 +278,47 @@ app.post("/delete", async(req, res) => {
   }
 
 });
+app.post('/send-email', (req, res) => {
+  // const { name, email, feedback } = req.body;
+  const name = req.body.name;
+  const email = req.body.email;
+  const feedback = req.body.feedback;
+
+  // Use the email from the form as the recipient email
+  
+
+  // Create a Nodemailer transporter
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'abhaydixitfake@gmail.com',
+      pass: process.env.email_pass,
+    },
+  });
+
+  // Email content
+  const mailOptions = {
+    from: 'abhaydixitfake@gmail.com',
+    to: 'abhaydixitfake@gmail.com',
+    subject: 'QuickZen - New Contact Form Submission',
+    text: `Name: ${name}\nEmail: ${email}\nMessage: ${feedback}`,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      res.status(500).send('Internal Server Error');
+    } else {
+      console.log('Email sent: ' + info.response);
+      
+      res.redirect('/email-sent')
+    }
+  });
+});
+
+app.get("/email-sent", (req, res)=>{
+  res.render("email_sent.ejs")
+})
 
 app.get('/logout', (req,res)=>{
   res.redirect('/')
